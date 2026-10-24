@@ -1,0 +1,22 @@
+{
+  "run": "yolov8s_sintetis50",
+  "model": "yolov8s",
+  "scenario": "Sintetis 50% (700 citra siang + 350 citra malam sintetis, augmentasi 3x)",
+  "dataset": "pororozagi/cycle-half",
+  "best_epoch": 37,
+  "params": 11125971,
+  "inference_ms_per_image": 12.2,
+  "test": {
+    "precision": 0.8166,
+    "recall": 0.5964,
+    "map50": 0.6662,
+    "map50_95": 0.3274
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "ultralytics": "8.3.63",
+    "gpu": "Tesla T4"
+  }
+}

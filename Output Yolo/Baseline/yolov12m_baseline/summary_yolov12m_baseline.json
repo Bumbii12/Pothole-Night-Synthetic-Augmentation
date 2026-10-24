@@ -1,0 +1,22 @@
+{
+  "run": "yolov12m_baseline",
+  "model": "yolov12m",
+  "scenario": "Baseline (augmentasi 3x, tanpa data sintetis)",
+  "dataset": "pororozagi/the-basic",
+  "best_epoch": 48,
+  "params": 19577299,
+  "inference_ms_per_image": 63.85,
+  "test": {
+    "precision": 0.7549,
+    "recall": 0.506,
+    "map50": 0.5783,
+    "map50_95": 0.2988
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "ultralytics": "8.3.63",
+    "gpu": "Tesla T4"
+  }
+}

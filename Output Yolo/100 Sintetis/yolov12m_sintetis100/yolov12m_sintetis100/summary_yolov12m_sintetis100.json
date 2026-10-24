@@ -1,0 +1,22 @@
+{
+  "run": "yolov12m_sintetis100",
+  "model": "yolov12m",
+  "scenario": "Sintetis 100% (700 citra siang + 700 citra malam sintetis, augmentasi 3x)",
+  "dataset": "pororozagi/aug-cycle",
+  "best_epoch": 24,
+  "params": 19577299,
+  "inference_ms_per_image": 65.36,
+  "test": {
+    "precision": 0.5999,
+    "recall": 0.6053,
+    "map50": 0.5882,
+    "map50_95": 0.303
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.9.0+cu128",
+    "cuda": "12.8",
+    "ultralytics": "8.3.63",
+    "gpu": "Tesla T4"
+  }
+}
